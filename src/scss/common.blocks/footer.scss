@@ -1,0 +1,181 @@
+.footer {
+	padding: 40px 0;
+	background-color: #3B3B3B;
+
+	// .footer__container
+
+	&__container {}
+
+	// .footer__wrapper
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 20px;
+		padding-bottom: 30px;
+		border-bottom: 1px solid #858584;
+
+		@media(min-width:992px) {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+
+	// .footer__nft-box
+
+	&__nft-box {
+		margin-bottom: 30px;
+
+		@media(min-width:992px) {
+			margin-bottom: 0;
+		}
+	}
+
+	// .footer__logo
+
+	&__logo {}
+
+	// .footer__text
+
+	&__text {
+		max-width: 350px;
+		color: #CCC;
+		font-size: 16px;
+		margin-bottom: 20px;
+		line-height: 140%;
+	}
+
+	// .footer__join
+
+	&__join {
+		display: block;
+		margin-bottom: 15px;
+		color: #CCC;
+		font-size: 16px;
+		font-weight: 400;
+	}
+
+	// .footer__socials
+
+	&__socials {
+		display: flex;
+		gap: 10px;
+	}
+
+	// .footer__list
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 30px;
+
+		@media(min-width:992px) {
+			margin-bottom: 0;
+		}
+	}
+
+	// .footer__item
+
+	&__item:not(:last-child) {
+		margin-bottom: 20px;
+	}
+
+	// .footer__small-title
+
+	&__small-title {
+		margin-bottom: 20px;
+		font-family: SpaceMono;
+		font-size: 22px;
+		font-weight: 700;
+
+		@media(min-width:992px) {
+			margin-bottom: 25px;
+		}
+	}
+
+	// .footer__link
+
+
+	&__link {
+		transition: color 0.4s ease 0s;
+	}
+
+	&__link:hover {
+		color: #FFF;
+
+	}
+
+	// .footer__join-box
+
+	&__join-box {}
+
+	// .footer__form
+
+	&__form {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+
+		@media(min-width:768px) {
+			width: 400px;
+			flex-direction: row;
+			gap: 0px;
+		}
+	}
+
+	// .footer__input
+
+	&__input {
+		padding: 15px 20px;
+		border-radius: 20px;
+		border: 1px solid #858584;
+		background: #FFF;
+	}
+
+	// .footer__btn
+
+	&__btn {
+		width: 100%;
+		padding: 13px 50px;
+		border-radius: 20px;
+
+		@media(min-width:768px) {
+			position: absolute;
+			right: 55px;
+			max-width: 180px;
+		}
+	}
+
+	// .footer__botton-text
+
+	&__botton-text {
+		font-size: 12px;
+	}
+}
+
+
+.logo {
+
+	// .logo__icon
+
+	&__icon {
+		margin-bottom: 23px;
+	}
+}
+
+
+.socials {
+
+	// .socials__link
+
+	&__link {}
+
+	// .socials__icon
+
+	&__icon {
+		width: 32px;
+		height: 32px;
+		fill: #858584;
+	}
+}

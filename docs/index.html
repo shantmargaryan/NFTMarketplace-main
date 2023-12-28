@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reapet-style.min.css">
+    <link rel="stylesheet" href="css/index.min.css">
+    <title>NFT Marketplace</title>
+</head>
+
+<body class="page__body">
+    <header class="header">
+    <div class="header__container">
+        <a class="header__logo logo" href="index.html">
+            <svg class="logo__icon logo">
+                <use xlink:href="img/svg/sprite.svg#Logo" />
+            </svg>
+        </a>
+        <nav class="nav fixed-block" data-nav title="navigation" aria-label="navigation list links">
+            <ul class="nav__list list-reset">
+                <li class="nav__item" data-nav-item>
+                    <a href="marketplace.html" class="nav__link link_color">
+                        Marketplace
+                    </a>
+                </li>
+                <li class="nav__item" data-nav-item>
+                    <a href="rankings.html" class="nav__link link_color">
+                        Rankings
+                    </a>
+                </li>
+                <li class="nav__item" data-nav-item>
+                    <a href="connect.html" class="nav__link link_color">
+                        Connect a wallet
+                    </a>
+                </li>
+                <li class="nav__item" data-nav-item>
+                    <a class="nav__sign-up link_color" href="sign-up.html">
+                        <svg class="nav__icon">
+                            <use xlink:href="img/svg/sprite.svg#User" />
+                        </svg>
+                        Sign Up
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__overlay"></div>
+        <button class="burger" aria-label="open menu" aria-expanded="false" data-burger>
+            <span class="burger__line burger__line_top"></span>
+            <span class="burger__line burger__line_middle"></span>
+            <span class="burger__line burger__line_bottom"></span>
+        </button>
+    </div>
+</header>
+    <main class="main">
+        <section class="hero space">
+    <div class="hero__container container">
+        <div class="hero__box">
+            <div class="hero__content">
+                <h1 class="hero__title title scroll-anim scroll-anim_once">
+                    Discover digital art & Collect NFTs
+                </h1>
+                <p class="hero__text text scroll-anim scroll-anim_once">
+                    NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists.
+                </p>
+            </div>
+            <div class="hero__img-box scroll-anim scroll-anim_once">
+                <img class="hero__img img" src="img/lightMoon.png" alt="moon">
+                <div class="hero__admin-box">
+                    <h3 class="hero__samll-title title">
+                        Space Walking
+                    </h3>
+                    <div class="hero__icon-box">
+                        <img class="hero__avatar img" src="img/animakid.png" alt="avatar">
+                        <span class="hero__name">
+                            Animakid
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="hero__btn btn btn-reset scroll-anim scroll-anim_once" type="button">
+            <svg class="hero__icon">
+                <use xlink:href="img/svg/sprite.svg#RocketLaunch" />
+            </svg>
+            Get Started
+        </button>
+        <ul class="hero__list list-reset scroll-anim scroll-anim_once">
+            <li class="hero__item">
+                <span class="hero__num">
+                    240k+
+                </span>
+                <span class="hero__artist">
+                    Total Sale
+                </span>
+            </li>
+            <li class="hero__item">
+                <span class="hero__num">
+                    100k+
+                </span>
+                <span class="hero__artist">
+                    Auctions
+                </span>
+            </li>
+            <li class="hero__item">
+                <span class="hero__num">
+                    240k+
+                </span>
+                <span class="hero__artist">
+                    Artists
+                </span>
+            </li>
+        </ul>
+    </div>
+</section>
+        <section class="trending space">
+    <div class="trending__container container">
+        <h2 class="trending__title title scroll-anim scroll-anim_once">
+            Trending Collection
+        </h2>
+        <p class="trending__text text">
+            Checkout our weekly updated trending collection.
+        </p>
+        <div class="swiper trending__swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="trending__item scroll-anim scroll-anim_once">
+                        <img class="trending__img img" src="img/PsychoDog.png" alt="dog">
+                        <div class="trending__img-box">
+                            <img class="trending__img trending__img_small img" src="img/Catfromfuture.png" alt="cat">
+                            <img class="trending__img trending__img_small img" src="img/DesignerBear.png" alt="bear">
+                            <div class="trending__box">
+                                <span class="trending__number">
+                                    1025+
+                                </span>
+                            </div>
+                        </div>
+                        <span class="trending__subtitle subtitle">
+                            DSGN Animals
+                        </span>
+                        <div class="trending__min-box">
+                            <img class="trending__avatar" src="img/mrfox.png" alt="mouse">
+                            <span class="trending__name">
+                                MrFox
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="trending__item scroll-anim scroll-anim_once">
+                        <img class="trending__img img" src="img/threeMushroom.png" alt="mushroom">
+                        <div class="trending__img-box">
+                            <img class="trending__img trending__img_small img" src="img/MagicMushroom.png" alt="mushroom">
+                            <img class="trending__img trending__img_small img" src="img/mushroom.png" alt="mushroom">
+                            <div class="trending__box">
+                                <span class="trending__number">
+                                    1025+
+                                </span>
+                            </div>
+                        </div>
+                        <span class="trending__subtitle subtitle">
+                            Magic Mushrooms
+                        </span>
+                        <div class="trending__min-box">
+                            <img class="trending__avatar" src="img/Shroomie.png" alt="boy">
+                            <span class="trending__name">
+                                Shroomie
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="trending__item scroll-anim scroll-anim_once">
+                        <img class="trending__img img" src="img/DancingRobot0387.png" alt="robot">
+                        <div class="trending__img-box">
+                            <img class="trending__img trending__img_small  img" src="img/DancingRobot0345.png" alt="robot">
+                            <img class="trending__img trending__img_small img" src="img/DancingRobot0356.png" alt="robot">
+                            <div class="trending__box">
+                                <span class="trending__number">
+                                    1025+
+                                </span>
+                            </div>
+                        </div>
+                        <span class="trending__subtitle subtitle">
+                            Disco Machines
+                        </span>
+                        <div class="trending__min-box">
+                            <img class="trending__avatar" src="img/yellowAvatar.png" alt="robot">
+                            <span class="trending__name">
+                                BeKind2Robots
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="trending__item scroll-anim scroll-anim_once">
+                        <img class="trending__img img" src="img/PsychoDog.png" alt="dog">
+                        <div class="trending__img-box">
+                            <img class="trending__img trending__img_small img" src="img/Catfromfuture.png" alt="cat">
+                            <img class="trending__img trending__img_small img" src="img/DesignerBear.png" alt="bear">
+                            <div class="trending__box">
+                                <span class="trending__number">
+                                    1025+
+                                </span>
+                            </div>
+                        </div>
+                        <span class="trending__subtitle subtitle">
+                            DSGN Animals
+                        </span>
+                        <div class="trending__min-box">
+                            <img class="trending__avatar" src="img/mrfox.png" alt="mouse">
+                            <span class="trending__name">
+                                MrFox
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="trending__item scroll-anim scroll-anim_once">
+                        <img class="trending__img img" src="img/threeMushroom.png" alt="mushroom">
+                        <div class="trending__img-box">
+                            <img class="trending__img trending__img_small img" src="img/MagicMushroom.png" alt="mushroom">
+                            <img class="trending__img trending__img_small img" src="img/mushroom.png" alt="mushroom">
+                            <div class="trending__box">
+                                <span class="trending__number">
+                                    1025+
+                                </span>
+                            </div>
+                        </div>
+                        <span class="trending__subtitle subtitle">
+                            Magic Mushrooms
+                        </span>
+                        <div class="trending__min-box">
+                            <img class="trending__avatar" src="img/Shroomie.png" alt="boy">
+                            <span class="trending__name">
+                                Shroomie
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="trending__item scroll-anim scroll-anim_once">
+                        <img class="trending__img img" src="img/DancingRobot0387.png" alt="robot">
+                        <div class="trending__img-box">
+                            <img class="trending__img trending__img_small  img" src="img/DancingRobot0345.png" alt="robot">
+                            <img class="trending__img trending__img_small img" src="img/DancingRobot0356.png" alt="robot">
+                            <div class="trending__box">
+                                <span class="trending__number">
+                                    1025+
+                                </span>
+                            </div>
+                        </div>
+                        <span class="trending__subtitle subtitle">
+                            Disco Machines
+                        </span>
+                        <div class="trending__min-box">
+                            <img class="trending__avatar" src="img/yellowAvatar.png" alt="robot">
+                            <span class="trending__name">
+                                BeKind2Robots
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="creators space">
+    <div class="creators__container container">
+        <div class="creators__content">
+            <div class="creators__title-box">
+                <h2 class="creators__title title scroll-anim scroll-anim_once">
+                    Top creators
+                </h2>
+                <p class="creators__text text scroll-anim scroll-anim_once">
+                    Checkout Top Rated Creators on the NFT Marketplace
+                </p>
+            </div>
+            <button class="creators__btn btn-reset btn scroll-anim scroll-anim_once" type="button">
+                <svg class="creators__icon">
+                    <use xlink:href="img/svg/sprite.svg#RocketLaunch" />
+                </svg>
+                View Rankings
+            </button>
+        </div>
+        <ul class="creators__list list-reset">
+            <li class="creators__item scroll-anim scroll-anim_once">
+                <a class="creators__link link_color" href="profile.html">
+                    <img class="creators__img img" src="img/Keepitreal.png" alt="avatar">
+                </a>
+                <div class="creators__box">
+                    <span class="creators__name subtitle">
+                        Keepitreal
+                    </span>
+                    <div class="creators__total-box">
+                        <span class="creators__total">
+                            Total Sales:
+                        </span>
+                        <span class="creators__num">
+                            34.53 ETH
+                        </span>
+                    </div>
+                </div>
+            </li>
+            <li class="creators__item scroll-anim scroll-anim_once">
+                <a class="creators__link link_color" href="profile.html">
+                    <img class="creators__img img" src="img/DigiLab.png" alt="avatar">
+                </a>
+                <div class="creators__box">
+                    <span class="creators__name subtitle">
+                        DigiLab
+                    </span>
+                    <div class="creators__total-box">
+                        <span class="creators__total">
+                            Total Sales:
+                        </span>
+                        <span class="creators__num">
+                            34.53 ETH
+                        </span>
+                    </div>
+                </div>
+            </li>
+            <li class="creators__item scroll-anim scroll-anim_once">
+                <a class="creators__link link_color" href="profile.html">
+                    <img class="creators__img img" src="img/GravityOne.png" alt="avatar">
+                </a>
+                <div class="creators__box">
+                    <span class="creators__name subtitle">
+                        GravityOne
+                    </span>
+                    <div class="creators__total-box">
+                        <span class="creators__total">
+                            Total Sales:
+                        </span>
+                        <span class="creators__num">
+                            34.53 ETH
+                        </span>
+                    </div>
+                </div>
+            </li>
+            <li class="creators__item scroll-anim scroll-anim_once">
+                <a class="creators__link link_color" href="profile.html">
+                    <img class="creators__img img" src="img/Juanie.png" alt="avatar">
+                </a>
+                <div class="creators__box">
+                    <span class="creators__name subtitle">
+                        Juanie
+                    </span>
+                    <div class="creators__total-box">
+                        <span class="creators__total">
+                            Total Sales:
+                        </span>
+                        <span class="creators__num">
+                            34.53 ETH
+                        </span>
+                    </div>
+                </div>
+            </li>
+            <li class="creators__item scroll-anim scroll-anim_once">
+                <a class="creators__link link_color" href="profile.html">
+                    <img class="creators__img img" src="img/BlueWhale.png" alt="avatar">
+                </a>
+                <div class="creators__box">
+                    <span class="creators__name subtitle">
+                        BlueWhale
+                    </span>
+                    <div class="creators__total-box">
+                        <span class="creators__total">
+                            Total Sales:
+                        </span>
+                        <span class="creators__num">
+                            34.53 ETH
+                        </span>
+                    </div>
+                </div>
+            </li>
+            <li class="creators__item scroll-anim scroll-anim_once">
+                <a class="creators__link link_color" href="profile.html">
+                    <img class="creators__img img" src="img/mrfox.png" alt="avatar">
+                </a>
+                <div class="creators__box">
+                    <span class="creators__name subtitle">
+                        mr fox
+                    </span>
+                    <div class="creators__total-box">
+                        <span class="creators__total">
+                            Total Sales:
+                        </span>
+                        <span class="creators__num">
+                            34.53 ETH
+                        </span>
+                    </div>
+                </div>
+            </li>
+            <li class="creators__item scroll-anim scroll-anim_once">
+                <a class="creators__link link_color" href="profile.html">
+                    <img class="creators__img img" src="img/Shroomie.png" alt="avatar">
+                </a>
+                <div class="creators__box">
+                    <span class="creators__name subtitle">
+                        Shroomie
+                    </span>
+                    <div class="creators__total-box">
+                        <span class="creators__total">
+                            Total Sales:
+                        </span>
+                        <span class="creators__num">
+                            34.53 ETH
+                        </span>
+                    </div>
+                </div>
+            </li>
+            <li class="creators__item scroll-anim scroll-anim_once">
+                <a class="creators__link link_color" href="profile.html">
+                    <img class="creators__img img" src="img/grayAvatar.png" alt="avatar">
+                </a>
+                <div class="creators__box">
+                    <span class="creators__name subtitle">
+                        robotica
+                    </span>
+                    <div class="creators__total-box">
+                        <span class="creators__total">
+                            Total Sales:
+                        </span>
+                        <span class="creators__num">
+                            34.53 ETH
+                        </span>
+                    </div>
+                </div>
+            </li>
+            <li class="creators__item scroll-anim scroll-anim_once">
+                <a class="creators__link link_color" href="profile.html">
+                    <img class="creators__img img" src="img/RustyRobot.png" alt="avatar">
+                </a>
+                <div class="creators__box">
+                    <span class="creators__name subtitle">
+                        RustyRobot
+                    </span>
+                    <div class="creators__total-box">
+                        <span class="creators__total">
+                            Total Sales:
+                        </span>
+                        <span class="creators__num">
+                            34.53 ETH
+                        </span>
+                    </div>
+                </div>
+            </li>
+            <li class="creators__item scroll-anim scroll-anim_once">
+                <a class="creators__link link_color" href="profile.html">
+                    <img class="creators__img img" src="img/animakid.png" alt="avatar">
+                </a>
+                <div class="creators__box">
+                    <span class="creators__name subtitle">
+                        animakid
+                    </span>
+                    <div class="creators__total-box">
+                        <span class="creators__total">
+                            Total Sales:
+                        </span>
+                        <span class="creators__num">
+                            34.53 ETH
+                        </span>
+                    </div>
+                </div>
+            </li>
+            <li class="creators__item scroll-anim scroll-anim_once">
+                <a class="creators__link link_color" href="profile.html">
+                    <img class="creators__img img" src="img/Dotgu.png" alt="avatar">
+                </a>
+                <div class="creators__box">
+                    <span class="creators__name subtitle">
+                        Dotgu
+                    </span>
+                    <div class="creators__total-box">
+                        <span class="creators__total">
+                            Total Sales:
+                        </span>
+                        <span class="creators__num">
+                            34.53 ETH
+                        </span>
+                    </div>
+                </div>
+            </li>
+            <li class="creators__item scroll-anim scroll-anim_once">
+                <a class="creators__link link_color" href="profile.html">
+                    <img class="creators__img img" src="img/chinaManAvatar.png" alt="avatar">
+                </a>
+                <div class="creators__box">
+                    <span class="creators__name subtitle">
+                        Ghiblier
+                    </span>
+                    <div class="creators__total-box">
+                        <span class="creators__total">
+                            Total Sales:
+                        </span>
+                        <span class="creators__num">
+                            34.53 ETH
+                        </span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+        <section class="browse space">
+    <div class="browse__container container">
+        <h2 class="browse__title title scroll-anim scroll-anim_once">
+            Browse Categories
+        </h2>
+        <ul class="browse__list list-reset">
+            <li class="browse__item scroll-anim scroll-anim_once">
+                <div class="browse__card">
+                    <img class="browse__img img" src="img/fish.png" alt="fish">
+                    <svg class="browse__icon">
+                        <use xlink:href="img/svg/sprite.svg#PaintBrush" />
+                    </svg>
+                </div>
+                <span class="browse__artist">
+                    Art
+                </span>
+            </li>
+            <li class="browse__item scroll-anim scroll-anim_once">
+                <div class="browse__card">
+                    <img class="browse__img img" src="img/IceCreamApe.png" alt="animal">
+                    <svg class="browse__icon">
+                        <use xlink:href="img/svg/sprite.svg#Swatches" />
+                    </svg>
+                </div>
+                <span class="browse__artist">
+                    Collectibles
+                </span>
+            </li>
+            <li class="browse__item scroll-anim scroll-anim_once">
+                <div class="browse__card">
+                    <img class="browse__img img" src="img/guitar.png" alt="guitar">
+                    <svg class="browse__icon">
+                        <use xlink:href="img/svg/sprite.svg#MusicNotes" />
+                    </svg>
+                </div>
+                <span class="browse__artist">
+                    Music
+                </span>
+            </li>
+            <li class="browse__item scroll-anim scroll-anim_once">
+                <div class="browse__card">
+                    <img class="browse__img img" src="img/oldMan.png" alt="old-man">
+                    <svg class="browse__icon">
+                        <use xlink:href="img/svg/sprite.svg#Camera" />
+                    </svg>
+                </div>
+                <span class="browse__artist">
+                    Photography
+                </span>
+            </li>
+            <li class="browse__item scroll-anim scroll-anim_once">
+                <div class="browse__card">
+                    <img class="browse__img img" src="img/Placeholder.png" alt="sky">
+                    <svg class="browse__icon">
+                        <use xlink:href="img/svg/sprite.svg#VideoCamera" />
+                    </svg>
+                </div>
+                <span class="browse__artist">
+                    Video
+                </span>
+            </li>
+            <li class="browse__item scroll-anim scroll-anim_once">
+                <div class="browse__card">
+                    <img class="browse__img img" src="img/key.png" alt="key">
+                    <svg class="browse__icon">
+                        <use xlink:href="img/svg/sprite.svg#MagicWand" />
+                    </svg>
+                </div>
+                <span class="browse__artist">
+                    Utility
+                </span>
+            </li>
+            <li class="browse__item scroll-anim scroll-anim_once">
+                <div class="browse__card">
+                    <img class="browse__img img" src="img/ball.png" alt="ball">
+                    <svg class="browse__icon">
+                        <use xlink:href="img/svg/sprite.svg#Basketball" />
+                    </svg>
+                </div>
+                <span class="browse__artist">
+                    Sport
+                </span>
+            </li>
+            <li class="browse__item scroll-anim scroll-anim_once">
+                <div class="browse__card">
+                    <img class="browse__img img" src="img/city.png" alt="city">
+                    <svg class="browse__icon">
+                        <use xlink:href="img/svg/sprite.svg#Planet" />
+                    </svg>
+                </div>
+                <span class="browse__artist">
+                    Virtual Worlds
+                </span>
+            </li>
+        </ul>
+    </div>
+</section>
+        <section class="discover space">
+    <div class="discover__container container">
+        <div class="discover__content">
+            <div class="discover__title-box">
+                <h2 class="discover__title title scroll-anim scroll-anim_once">
+                    Discover More NFTs
+                </h2>
+                <p class="discover__text text scroll-anim scroll-anim_once">
+                    Explore new trending NFTs
+                </p>
+            </div>
+            <button class="discover__btn btn btn-reset scroll-anim scroll-anim_once" type="button">
+                <svg class="discover__icon">
+                    <use xlink:href="img/svg/sprite.svg#Eye" />
+                </svg>
+                See All
+            </button>
+        </div>
+        <ul class="discover__list list-reset">
+            <li class="discover__item scroll-anim scroll-anim_once">
+                <a class="dicover__link" href="nft-page.html">
+                    <img class="discover__img img" src="img/DistantGalaxy.png" alt="galaxy">
+                </a>
+                <div class="discover__box">
+                    <h3 class="discover__small-title title">
+                        Distant Galaxy
+                    </h3>
+                    <div class="disvover__mini-box">
+                        <img class="discover__icon img" src="img/womanAvatar.png" alt="avatar">
+                        <span class="dicover__name">
+                            MoonDancer
+                        </span>
+                    </div>
+                    <div class="discover__item-box">
+                        <div class="discover__price-box">
+                            <span class="discover__price">
+                                Price
+                            </span>
+                            <span class="discover__num">
+                                1.63 ETH
+                            </span>
+                        </div>
+                        <div class="discover__bid-box">
+                            <span class="discover__price">
+                                Highest Bid
+                            </span>
+                            <span class="discover__num">
+                                0.33 wETH
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="discover__item scroll-anim scroll-anim_once">
+                <a class="dicover__link" href="nft-page.html">
+                    <img class="discover__img img" src="img/LifeOnEdena.png" alt="sky">
+                </a>
+                <div class="discover__box">
+                    <h3 class="discover__small-title title">
+                        Life On Edena
+                    </h3>
+                    <div class="disvover__mini-box">
+                        <img class="discover__icon img" src="img/blackManAvatar.png" alt="avatar">
+                        <span class="dicover__name">
+                            NebulaKid
+                        </span>
+                    </div>
+                    <div class="discover__item-box">
+                        <div class="discover__price-box">
+                            <span class="discover__price">
+                                Price
+                            </span>
+                            <span class="discover__num">
+                                1.63 ETH
+                            </span>
+                        </div>
+                        <div class="discover__bid-box">
+                            <span class="discover__price">
+                                Highest Bid
+                            </span>
+                            <span class="discover__num">
+                                0.33 wETH
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="discover__item scroll-anim scroll-anim_once">
+                <a class="dicover__link" href="nft-page.html">
+                    <img class="discover__img img" src="img/AstroFiction.png" alt="woman">
+                </a>
+                <div class="discover__box">
+                    <h3 class="discover__small-title title">
+                        AstroFiction
+                    </h3>
+                    <div class="disvover__mini-box">
+                        <img class="discover__icon img" src="img/Dotgu.png" alt="avatar">
+                        <span class="dicover__name">
+                            Spaceone
+                        </span>
+                    </div>
+                    <div class="discover__item-box">
+                        <div class="discover__price-box">
+                            <span class="discover__price">
+                                Price
+                            </span>
+                            <span class="discover__num">
+                                1.63 ETH
+                            </span>
+                        </div>
+                        <div class="discover__bid-box">
+                            <span class="discover__price">
+                                Highest Bid
+                            </span>
+                            <span class="discover__num">
+                                0.33 wETH
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+        <section class="magic space">
+    <div class="magic__container container">
+        <div class="magic__content">
+            <div class="magic__box">
+                <img class="magic__img img" src="img/Shroomie.png" alt="boy" />
+                <span class="magic__before-title"> Shroomie </span>
+            </div>
+            <h2 class="magic__title title">Magic Mashrooms</h2>
+        </div>
+        <button class="magic__btn btn-reset" type="button">
+            <svg class="magic__icon">
+                <use xlink:href="img/svg/sprite.svg#Eye" />
+            </svg>
+            See NFT
+        </button>
+        <div class="magic__time-box">
+            <h3 class="magic__small-title title">
+                Auction ends in:
+            </h3>
+            <ul class="magic__time-list list-reset">
+                <li class="magic__time-item">
+                    <span class="magic__hours">
+                    </span>
+                    <span class="magic__time-text"> Hours </span>
+                </li>
+                <li class="magic__time-item">
+                    <span class="magic__minutes">
+                    </span>
+                    <span class="magic__time-text"> Minutes </span>
+                </li>
+                <li class="magic__time-item">
+                    <span class="magic__seconds">
+                    </span>
+                    <span class="magic__time-text"> Seconds </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+        <section class="works space">
+    <div class="works__container container">
+        <div class="works__content">
+            <h2 class="works__title title scroll-anim scroll-anim_once">
+                How it works
+            </h2>
+            <p class="works__text text scroll-anim scroll-anim_once">
+                Find out how to get started
+            </p>
+        </div>
+        <ul class="works__list list-reset">
+            <li class="works__item scroll-anim scroll-anim_once">
+                <img class="works__img img" src="img/wallet.png" alt="wallet">
+                <div class="works__box">
+                    <h4 class="works__small-title title">
+                        Setup Your wallet
+                    </h4>
+                    <p class="works__small-text text">
+                        Set up your wallet of choice. Connect it to the Animarket by clicking the wallet icon in the top right
+                        corner.
+                    </p>
+                </div>
+            </li>
+            <li class="works__item scroll-anim scroll-anim_once">
+                <img class="works__img img" src="img/earning.png" alt="earning">
+                <div class="works__box">
+                    <h4 class="works__small-title title">
+                        Create Collection
+                    </h4>
+                    <p class="works__small-text text">
+                        Upload your work and setup your collection. Add a description, social links and floor price.
+                    </p>
+                </div>
+            </li>
+            <li class="works__item scroll-anim scroll-anim_once">
+                <img class="works__img img" src="img/collection.png" alt="collection">
+                <div class="works__box">
+                    <h4 class="works__small-title title">
+                        Create Collection
+                    </h4>
+                    <p class="works__small-text text">
+                        Choose between auctions and fixed-price listings. Start earning by selling your NFTs or trading others.
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+        <section class="join space">
+    <div class="join__container container scroll-anim scroll-anim_once">
+        <div class="join__wrapper">
+            <img class="join__img img" src="img/cosmonaut.png" alt="cosmonaut">
+            <div class="join__content">
+                <h2 class="join__title title">
+                    Join our weekly digest
+                </h2>
+                <p class="join__text text">
+                    Get exclusive promotions & updates straight to your inbox.
+                </p>
+                <form class="join__form form" action="#" method="post" enctype="multipart/form-data">
+                    <input class="form__input" required type="email" placeholder="Enter your email here">
+                    <button class="form__btn btn btn-reset" type="submit">
+                        <svg class="form__icon">
+                            <use xlink:href="img/svg/sprite.svg#EnvelopeSimple" />
+                        </svg>
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+    <footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__wrapper">
+            <div class="footer__nft-box">
+                <a class="footer__logo logo" href="index.html">
+                    <svg class="logo__icon logo">
+                        <use xlink:href="img/svg/sprite.svg#Logo" />
+                    </svg>
+                </a>
+                <p class="footer__text text">
+                    NFT marketplace UI created with Anima for Figma. </p>
+                <span class="footer__join">
+                    Join our community
+                </span>
+                <div class="footer__socials socials">
+                    <a class="socials__link" href="#">
+                        <svg class="socials__icon">
+                            <use xlink:href="img/svg/sprite.svg#DiscordLogo" />
+                        </svg>
+                    </a>
+                    <a class="socials__link" href="#">
+                        <svg class="socials__icon">
+                            <use xlink:href="img/svg/sprite.svg#YoutubeLogo" />
+                        </svg>
+                    </a>
+                    <a class="socials__link" href="#">
+                        <svg class="socials__icon">
+                            <use xlink:href="img/svg/sprite.svg#TwitterLogo" />
+                        </svg>
+                    </a>
+                    <a class="socials__link" href="#">
+                        <svg class="socials__icon">
+                            <use xlink:href="img/svg/sprite.svg#InstagramLogo" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <ul class="footer__list list-reset">
+                <li class="footer__item">
+                    <h3 class="footer__small-title title">
+                        Explore
+                    </h3>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link gray_link" href="marketplace.html">
+                        Marketplace
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link gray_link" href="rankings.html">
+                        Rankings
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link gray_link" href="connect.html">
+                        Connect a wallet
+                    </a>
+                </li>
+            </ul>
+            <div class="footer__join-box">
+                <h3 class="footer__small-title title">
+                    Join our weekly digest
+                </h3>
+                <p class="footer__text text">
+                    Get exclusive promotions & updates straight to your inbox.
+                </p>
+                <form class="footer__form form" action="#" method="post" enctype="multipart/form-data">
+                    <input class="footer__input" type="email" placeholder="Enter your email here" required>
+                    <button class="footer__btn btn btn-reset" type="submit">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </div>
+        <p class="footer__botton-text text">
+            Ⓒ NFT Market. Use this template freely.
+        </p>
+    </div>
+</footer>
+    <script src="js/index.min.js"></script>
+</body>
+
+</html>

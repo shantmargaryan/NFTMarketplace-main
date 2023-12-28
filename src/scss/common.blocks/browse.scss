@@ -1,0 +1,100 @@
+.browse {
+
+	// .browse__container
+
+	&__container {}
+
+	// .browse__title
+
+	&__title {
+		font-size: 28px;
+		margin-bottom: 40px;
+		transition: opacity 1s ease , transform 1s ease;
+
+		&.scroll-anim {
+			transform: translateX(-20%);
+			opacity: 0;
+		}
+
+		&.scroll-anim_active {
+			transform: translateX(0);
+			opacity: 1;
+		}
+
+		@media(min-width:992px) {
+			font-size: 38px;
+			margin-bottom: 60px;
+		}
+	}
+
+	// .browse__list
+
+	&__list {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		justify-items: center;
+		gap: 20px;
+
+		@media(min-width:768px) {
+			grid-template-columns: repeat(4, 1fr);
+			gap: 30px;
+		}
+	}
+
+	// .browse__item
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		border-radius: 20px;
+		background: rgba(255, 255, 255, 0.10);
+		transition: opacity 1s ease , transform 1s ease;
+
+		&.scroll-anim {
+			transform: translateX(20%);
+			opacity: 0;
+		}
+
+		&.scroll-anim_active {
+			transform: translateX(0);
+			opacity: 1;
+		}
+
+	}
+
+	// .browse__card
+
+	&__card {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	// .browse__img
+
+	&__img {
+		filter: blur(6.5px);
+	}
+
+	// .browse__icon
+
+	&__icon {
+		position: absolute;
+		max-width: 80px;
+	}
+
+
+	// .browse__artist
+
+	&__artist {
+		max-width: 110px;
+		padding: 20px 20px 25px 20px;
+		color: #FFF;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 140%;
+		align-self: start;
+	}
+}

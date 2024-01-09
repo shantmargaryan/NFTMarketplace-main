@@ -28,8 +28,8 @@
 	-webkit-appearance: none;
 	appearance: none;
 	border: none;
-	border-radius: 0;
-	background-color: #fff;
+	border-radius: none;
+	background-color: transparent;
 
 	&::-webkit-search-decoration,
 	&::-webkit-search-cancel-button,

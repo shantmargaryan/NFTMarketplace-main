@@ -32,6 +32,10 @@
 		@media(min-width:992px) {
 			padding: 0 50px;
 		}
+
+		@media(min-width:1200px){
+			justify-content: space-around;
+		}
 	}
 
 	&__overlay {

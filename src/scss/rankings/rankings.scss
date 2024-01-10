@@ -1,0 +1,189 @@
+.hero {
+
+	// .hero__container
+
+	&__container {}
+
+	&__content {
+		padding: 30px 0;
+
+		@media(min-width:768px) {
+			padding: 40px 0;
+		}
+
+		@media(min-width:992px) {
+			padding: 80px 0;
+		}
+	}
+
+	// .hero__title
+
+	&__title {
+		margin-bottom: 10px;
+	}
+
+	// .hero__text
+
+	&__text {
+		text-transform: none;
+	}
+
+	// .hero__list
+
+	&__list {
+		display: flex;
+		justify-content: space-evenly;
+		margin-bottom: 40px;
+	}
+
+	// .hero__item
+
+	&__item {}
+
+	// .hero__btn
+
+	&__btn {
+		color: #858584;
+		font-size: 16px;
+		font-weight: 600;
+	}
+
+	&__artist-box {
+		display: flex;
+		justify-content: space-between;
+		padding: 12px 10px;
+		margin-bottom: 20px;
+		border-radius: 20px;
+		border: 1px solid #3B3B3B;
+	}
+
+	// .hero__samll-title
+
+	&__samll-title {
+		display: flex;
+		align-items: center;
+		color: #858584;
+		font-family: SpaceMono;
+		font-size: 12px;
+		font-weight: 400;
+
+		&::before {
+			content: "#";
+			margin-right: 10px;
+		}
+
+		@media(min-width:768px) {
+			font-size: 16px;
+		}
+	}
+
+	// .hero__artist-list
+
+	&__artist-list {
+		display: flex;
+		justify-content: space-between;
+		width: 480px;
+	}
+
+	// .hero__artist-item
+
+	&__artist-item {}
+
+	&__artist-subtitle {
+		color: #858584;
+		font-family: SpaceMono;
+		font-size: 16px;
+		font-weight: 400;
+	}
+
+	@media(max-width:768px) {
+		&__artist-subtitle_none {
+			display: none;
+		}
+	}
+
+	@media(max-width:576px) {
+		&__artist-subtitle_nft-none {
+			display: none;
+		}
+	}
+
+	// .hero__avatar-list
+
+	&__avatar-list {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	// .hero__avatar-item
+
+	&__avatar-item {
+		display: flex;
+		align-items: center;
+		padding: 12px 10px;
+		border-radius: 20px;
+		background: #3B3B3B;
+	}
+
+	// .hero__img
+
+	&__img {
+		width: 24px;
+		height: 24px;
+		margin-right: 12px;
+	}
+
+	// .hero__name
+
+	&__name {
+		color: #FFF;
+		font-size: 16px;
+		font-weight: 400;
+
+		@media(min-width:768px) {
+			font-size: 22px;
+			font-weight: 600px;
+		}
+	}
+
+	// .hero__percent
+
+	&__percent {
+		display: none;
+		color: #00AC4F;
+		font-family: SpaceMono;
+		font-size: 16px;
+		font-weight: 400;
+
+		@media(max-width:768px){
+			display: block;
+		}
+	}
+
+	// .hero__number
+
+	&__number {
+		color: #FFF;
+		font-family: SpaceMono;
+		font-size: 16px;
+		font-weight: 400;
+
+		@media(min-width:768px) {
+			display: none;
+		}
+
+		@media(min-width:992px){
+			display: block;
+		}
+	}
+
+	// .hero__eth
+
+	&__eth {
+		color: #FFF;
+		font-family: SpaceMono;
+		font-size: 16px;
+		font-weight: 400;
+	}
+}

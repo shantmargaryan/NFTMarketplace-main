@@ -43,9 +43,51 @@
 	// .hero__btn
 
 	&__btn {
+		position: relative;
 		color: #858584;
 		font-size: 16px;
 		font-weight: 600;
+		transition: color 0.3s ease, opacity 0.3s ease;
+
+		&:hover::before {
+			left: -25px;
+			right: -20px;
+			bottom: -20px;
+			background-color: #858584;
+
+			@media(min-width:768px) {
+				left: -40px;
+				right: -40px;
+			}
+		}
+
+		&:hover {
+			color: #fff;
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			height: 2px;
+			transition: right 0.5s ease, left 0.5s ease;
+		}
+	}
+
+	&__btn_none {
+		@media(min-width:768px) {
+			opacity: 0;
+		}
+	}
+
+	&__btn_block {
+		opacity: 0;
+
+		@media(min-width:768px) {
+			opacity: 1;
+		}
 	}
 
 	&__artist-box {
@@ -81,7 +123,7 @@
 
 	&__artist-list {
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
 		width: 480px;
 	}
 
@@ -114,17 +156,54 @@
 		display: flex;
 		flex-direction: column;
 		gap: 20px;
+		padding-bottom: 40px;
+		counter-reset: number;
 	}
 
 	// .hero__avatar-item
 
 	&__avatar-item {
 		display: flex;
+		justify-content: space-between;
 		align-items: center;
 		padding: 12px 10px;
 		border-radius: 20px;
 		background: #3B3B3B;
 	}
+
+	&__img-box {
+		display: flex;
+		align-items: center;
+	}
+
+	&__before-box {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 30px;
+		height: 30px;
+		padding: 3px 10px;
+		margin-right: 10px;
+		border-radius: 50%;
+
+		@media(min-width:992px) {
+			background-color: #2B2B2B;
+		}
+
+		&::before {
+			counter-increment: number;
+			content: counter(number);
+			color: #858584;
+			font-family: SpaceMono;
+			font-size: 12px;
+			font-weight: 400;
+
+			@media(min-width:768px) {
+				font-size: 16px;
+			}
+		}
+	}
+
 
 	// .hero__img
 
@@ -132,6 +211,12 @@
 		width: 24px;
 		height: 24px;
 		margin-right: 12px;
+		display: block;
+
+		@media(min-width:992px) {
+			width: 60px;
+			height: 60px;
+		}
 	}
 
 	// .hero__name
@@ -143,7 +228,7 @@
 
 		@media(min-width:768px) {
 			font-size: 22px;
-			font-weight: 600px;
+			font-weight: 600;
 		}
 	}
 
@@ -156,24 +241,35 @@
 		font-size: 16px;
 		font-weight: 400;
 
-		@media(max-width:768px){
+		@media(min-width:768px) {
 			display: block;
+		}
+	}
+
+	&__num-box {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+
+		@media(min-width:768px) {
+			width: 480px;
 		}
 	}
 
 	// .hero__number
 
 	&__number {
+		display: none;
 		color: #FFF;
 		font-family: SpaceMono;
 		font-size: 16px;
 		font-weight: 400;
 
-		@media(min-width:768px) {
-			display: none;
+		@media(min-width:992px) {
+			display: block;
 		}
 
-		@media(min-width:992px){
+		@media(min-width:992px) {
 			display: block;
 		}
 	}
@@ -183,7 +279,11 @@
 	&__eth {
 		color: #FFF;
 		font-family: SpaceMono;
-		font-size: 16px;
+		font-size: 12px;
 		font-weight: 400;
+
+		@media(min-width:768px) {
+			font-size: 16px;
+		}
 	}
 }

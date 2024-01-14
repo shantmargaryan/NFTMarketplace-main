@@ -46,7 +46,7 @@
 		}
 
 		&.scroll-anim {
-			transform: translateX(-20%);
+			transform: translateX(-10px);
 			opacity: 0;
 		}
 
@@ -69,7 +69,7 @@
 		}
 
 		&.scroll-anim {
-			transform: translateX(-20%);
+			transform: translateX(-10px);
 			opacity: 0;
 		}
 
@@ -98,7 +98,7 @@
 		}
 
 		&.scroll-anim {
-			transform: translateX(-20%);
+			transform: translateX(-20px);
 			opacity: 0;
 		}
 
@@ -125,7 +125,7 @@
 		transition: opacity 2s ease , transform 2s ease;
 
 		&.scroll-anim {
-			transform: translateX(-20%);
+			transform: translateX(-10px);
 			opacity: 0;
 		}
 
@@ -180,7 +180,7 @@
 		}
 
 		&.scroll-anim {
-			transform: translateX(20%);
+			transform: translateX(10px);
 			opacity: 0;
 		}
 

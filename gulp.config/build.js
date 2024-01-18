@@ -60,12 +60,11 @@ const css = () => {
 	return gulp.src(`${srcFolder}scss/*.scss`)
 		.pipe(gulpPlumber(plumberNotify('css')))
 		.pipe(dartSass())
-		.pipe(gulpGroupCssMediaQueries())
-		.pipe(gulpAutoprefixer({
-			cascade: false,
-			grid: true,
-			overrideBrowserslist: ["last 5 versions"]
-		}))
+		// .pipe(gulpGroupCssMediaQueries())
+		.pipe(gulpAutoprefixer(
+			['last 15 versions', '> 1%', 'ie 8', 'ie 7']
+			, { cascade: true }
+		))
 		.pipe(gulpCsso())
 		.pipe(gulpRename({
 			suffix: ".min",

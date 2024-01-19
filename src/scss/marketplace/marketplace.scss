@@ -116,10 +116,10 @@
 			border-radius: 20px;
 			background-color: #3B3B3B;
 			transition: background-color 0.3s ease 0s;
-			opacity: 0;
+			display: none;
 
 			@media(min-width:768px) {
-				opacity: 1;
+				display: inline;
 			}
 		}
 	}
@@ -141,10 +141,10 @@
 			border-radius: 20px;
 			background-color: #3B3B3B;
 			transition: background-color 0.3s ease 0s;
-			opacity: 0;
+			display: none;
 
 			@media(min-width:768px) {
-				opacity: 1;
+				display: inline;
 			}
 		}
 	}
@@ -176,8 +176,8 @@
 		&:hover::before {
 			position: absolute;
 			bottom: -20px;
-			right: 20px;
-			left: -27px;
+			right: -10px;
+			left: -20px;
 			background-color: #858584;
 
 			@media(min-width:768px) {
